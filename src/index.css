@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Nunito&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.dBlock{
+    display: block;
+}
+
+.dNone{
+    display: none;
+}
+
+.container{
+    width: 1300px!important;
+    margin: 0 auto!important;
+}
+
+.load{
+    padding-right: 20px;
+}

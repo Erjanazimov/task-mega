@@ -1,0 +1,112 @@
+.articleUl > ul >  li{
+    list-style: none;
+    line-height: 3;
+}
+
+.articleUl > ul > a > li{
+    list-style: none;
+    line-height: 3;
+    color: black;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+.home > svg{
+    color: white;
+}
+
+.save{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.page{
+    padding-top: 40px;
+}
+
+.textHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.textHeader > h1{
+    padding-left: 60px;
+}
+
+.carHeader{
+    width: 50px;
+    height: 50px;
+    background-color: #47CB7B;
+    border-radius: 10px;
+}
+
+.carHeader > img{
+
+    padding: 12px;
+}
+
+.headerFlex{
+    display: flex;
+}
+
+.cars{
+    display: flex;
+    align-items: center;
+}
+
+.cars > p {
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.borderBottom{
+    border-bottom: 1px solid #E5E5E5;
+    position: absolute;
+    width: 1200px;
+    margin: -25px 0px 0px 105px;
+}
+
+.listArticle{
+    padding-left: 66px;
+}
+
+.articleUl > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameLisk{
+    border-bottom: 1px solid #CECECE;
+}
+
+.btnList{
+    border: 2px solid #222222;
+    padding: 0px 25px 0px 25px;
+    border-radius: 6px;
+}
+
+.btnList:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

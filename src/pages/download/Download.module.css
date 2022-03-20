@@ -1,0 +1,93 @@
+.textDown > ol > li{
+    line-height: 2;
+    font-size: 17px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+.home > svg{
+    color: black;
+}
+
+.save{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #222222;
+    color: white;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.page{
+    padding-top: 40px;
+}
+
+.textHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.carHeader{
+    width: 50px;
+    height: 50px;
+    background-color: #47CB7B;
+    border-radius: 10px;
+}
+
+.carHeader > img{
+    padding: 12px;
+}
+
+.headerFlex{
+    display: flex;
+}
+
+.cars{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.cars > p {
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.headerFlex{
+    display: flex;
+}
+
+.carHeader > img{
+    padding: 12px;
+}
+
+.borderBottom{
+    border-bottom: 1px solid #E5E5E5;
+    position: absolute;
+    width: 1200px;
+    margin: -25px 0px 0px 105px;
+}
+
+.textDown{
+    padding-left: 84px;
+}
+
+.text{
+    background-color: #F8F8F8;
+}

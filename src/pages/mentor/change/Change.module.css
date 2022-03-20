@@ -1,0 +1,57 @@
+li{
+    line-height: 2;
+    list-style: none;
+}
+
+.row{
+    width: 45px;
+    height: 45px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+.row > svg {
+    color: white;
+}
+
+.flex_change{
+    display: flex;
+    margin-top: 40px;
+}
+
+.title{
+    padding-left: 137px;
+    width: 800px;
+}
+
+.etap > div  > input{
+    width: 240px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.edit{
+    padding-top: 40px;
+}
+
+.teg > div{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #C5C5C5;
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.teg > div >svg {
+    padding-right: 10px;
+}

@@ -1,0 +1,92 @@
+.flex_login {
+    display: flex;
+}
+
+.logo{
+    background-color: #5C03BC;
+    height: 800px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth{
+    display: flex;
+    margin: 0 auto;
+}
+
+.cube{
+    background-image: url("../../images/Polygon 2.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    width: 460px;
+    height: 460px;
+}
+
+.logoImg{
+   padding-left: 72px;
+}
+
+.authForm{
+    width: 540px;
+    margin-top: 40px;
+}
+
+.authForm > h1{
+    font-size: 67px;
+    font-weight: bold;
+
+}
+
+.formLogin{
+    margin-top: 75px;
+}
+
+.formLogin > div > label{
+    font-size: 22px;
+}
+
+.formLogin > div > input {
+    width: 480px;
+    height: 50px;
+    border: 1px solid #C5C5C5;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.pass{
+    margin-top: 35px;
+}
+
+.authPass{
+    padding-top: 15px;
+}
+
+.authPass > div{
+    font-weight: 400;
+    color: #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
+}
+
+.button{
+    display: block;
+}
+
+
+.button > input{
+    background-color: #47CB7B;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 210px!important;
+    height: 65px;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 59px!important;
+}
+

@@ -1,0 +1,109 @@
+.flexChange{
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    width: 45px;
+    height: 45px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.row > svg {
+    color: white;
+}
+
+.text{
+    font-weight: bold;
+}
+
+.width{
+    padding-left: 126px;
+    padding-top: 20px;
+}
+
+.width > div > input{
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 15px;
+    border: 1px solid #C5C5C5;
+    padding: 5px;
+}
+
+.changeSelect{
+    padding: 13px;
+    margin-left: 40px;
+    border: 1px solid #C5C5C5;
+}
+
+.textArea > textarea{
+    width: 600px;
+    height: 200px;
+    border: 1px solid #C5C5C5;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.textPost {
+    margin-top: 40px;
+}
+
+.flexChan{
+    display: flex;
+}
+
+.textH {
+    display: flex;
+    margin-top: 200px;
+    margin-left:80px ;
+}
+
+.textH > p > input{
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+.teg{
+    margin-left: 84px;
+    margin-top: 30px;
+}
+
+.teg > div{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #C5C5C5;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.teg > div >svg {
+    padding-right: 10px;
+}
+
+.btn{
+    width: 200px;
+    height: 60px;
+    background-color: #47CB7B;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 90px;
+    margin-left: 84px;
+}
+
