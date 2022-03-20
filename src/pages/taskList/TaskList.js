@@ -29,12 +29,20 @@ const TaskList = () => {
                             {taskStudent.length ?
                                 taskStudent.map((item, index) => {
                                     return <Link key={item.id} to={item.status === 1 ? "/taskList"  :`/taskExecution/${item.id}`}>
-                                        <li className={taskCss.listPost}>
-                                            <div><span>{index}. </span>{item.task.title}</div>
-                                            <div className={taskCss.completed}>
-                                                {item.status === 1 ? "Выполнено" : <span className="text-danger">Не выполнено</span> }
-                                            </div>
-                                        </li>
+                                                {item.status === 1 ?
+                                                    <li className={`${taskCss.listPost} ${taskCss.yes}`}>
+                                                        <div><span>{index}. </span>{item.task.title}</div>
+                                                        <div className={taskCss.completed}>
+                                                            Выполнено
+                                                        </div>
+                                                    </li>
+                                                     :  <li className={`${taskCss.listPost} ${taskCss.nov}`}>
+                                                        <div><span>{index}. </span>{item.task.title}</div>
+                                                        <div className={taskCss.completed2}>
+                                                            Не выполнено
+                                                        </div>
+                                                    </li> }
+
                                     </Link>
                                 })
                               : <h2>Загрузка</h2>

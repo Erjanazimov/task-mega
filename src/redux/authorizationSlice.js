@@ -18,7 +18,7 @@ export const fetchLogin = createAsyncThunk(
             if (response.ok) {
                 const data = await response.json();
 
-                if (data[1].role === null) {
+                if (data[1].role === 1) {
                     dispatch(tokenLocal(data))
                     userLogin.navigation("/mentor");
                 } else if (data[1].role === 2) {

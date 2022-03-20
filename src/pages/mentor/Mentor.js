@@ -4,7 +4,6 @@ import vector from "../../images/Vector (1).png"
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchGroup, fetchGroups} from "../../redux/groupSlice";
-import {nullStage} from "../../redux/editSlice";
 
 const Mentor = () => {
     const tokenState = useSelector(state => state.authorization.token);
@@ -15,7 +14,6 @@ const Mentor = () => {
         if (tokenState.length) {
             dispatch(fetchGroups({tokenState}))
         }
-
     }, [tokenState]);
 
     const groupsMap = groupsState.map(group => <div key={group.id} className={mentorCss.listArticle}>

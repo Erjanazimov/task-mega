@@ -1,6 +1,7 @@
 .articleUl > ul >  li{
     list-style: none;
     line-height: 3;
+    width: 124px;
 }
 
 .articleUl > ul > a > li{

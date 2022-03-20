@@ -17,6 +17,7 @@ export const fetchEditBtn = createAsyncThunk(
 
             const response = await fetch(`https://app1.megacom.kg:9090/task-manager/api/v1/group/update/${token.editGroupState.id}`, options);
             const data = await response.json();
+
             if (response.ok) {
                 toast.success("Успешно изменено")
             }else {
@@ -44,13 +45,10 @@ export const fetchStage = createAsyncThunk(
 
             const response = await fetch(`https://app1.megacom.kg:9090/task-manager//api/v1/stage/group-stage/list/?group_id=${token.editGroupState.id}`, options);
             const data = await response.json();
+
             if (response.ok) {
                 dispatch(addStage({data}))
             }else {
-
-
-
-
                 for (let i in  data){
                     toast.error(data[i].toString())
                 }

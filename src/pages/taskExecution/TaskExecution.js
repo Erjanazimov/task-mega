@@ -41,6 +41,15 @@ const TaskExecution = ({id}) => {
         }
     }, [tokenState])
 
+    useEffect(() => {
+        const next = stateExecution.filter(item => item.status === 2)
+        if (numNext <= next.length - 1){
+            navigation(`/taskExecution/${next[numNext].id}`)
+        } else {
+            setNumNext(0)
+        }
+    }, [numNext])
+
     if (!executionStateTask){
         return <h2>Нету такого задачи</h2>
     }
@@ -67,14 +76,7 @@ const TaskExecution = ({id}) => {
     }
 
     const nextBtn = () => {
-        const next = stateExecution.filter(item => item.status === 2)
         setNumNext(prev => prev + 1)
-
-        if (numNext <= next.length - 1){
-            navigation(`/taskExecution/${next[numNext].id}`)
-        } else {
-            setNumNext(0)
-        }
     }
 
 

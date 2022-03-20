@@ -37,6 +37,7 @@ export const fetchGroup = createAsyncThunk(
 
             const response = await fetch(`https://app1.megacom.kg:9090/task-manager/api/v1/group/update/${group.id}`, options);
             const data = await response.json();
+
             if (response.ok) {
                 localStorage.setItem(`group`, JSON.stringify(data));
                 dispatch(editGroupAdd({data}))

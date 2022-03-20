@@ -37,8 +37,9 @@
 .listPost{
     display: flex;
     justify-content: space-between;
-    width: 710px;
+    width: 860px;
     padding-left: 10px;
+    padding-right: 140px;
     line-height: 2;
 }
 
@@ -59,5 +60,18 @@
 
 .taskLink> a {
     color: black;
+}
+
+.yes{
+    background-color: #DBF3E5;
+}
+
+.nov{
+    background-color: #FFF0F0;
+}
+
+.completed2{
+    color: #929292;
+    font-weight:600;
 }
 
