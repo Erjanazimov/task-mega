@@ -10,6 +10,7 @@ import Change from "../pages/mentor/change/Change";
 import ForgotPass from "../pages/login/ForgotPass/ForgotPass";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchStudentsTask} from "../redux/studentsTaskSlice";
+import NotPageFound from "../pages/notPageFound";
 
 const Router = () => {
     const tokenState = useSelector(state => state.authorization.token2);
@@ -31,6 +32,7 @@ const Router = () => {
             <Route path="/download" element={<Download/>}/>
             <Route path="/change" element={<Change/>}/>
             <Route path="/loadTask" element={<LoadTask/>}/>
+            <Route exact path="*" element={<NotPageFound/>}/>
         </Routes>
     );
 };

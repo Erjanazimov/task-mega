@@ -1,5 +1,5 @@
 .containerTask{
-    width: 860px;
+    width: 1200px;
 }
 
 .title{
@@ -30,6 +30,10 @@
     font-weight: 700;
 }
 
+.mop{
+    padding-left: 186px!important;
+}
+
 .flexList{
     display: flex;
 }
@@ -41,6 +45,7 @@
     padding-left: 10px;
     padding-right: 140px;
     line-height: 2;
+    margin-top: 5px;
 }
 
 .fonsTaskText{
@@ -73,5 +78,11 @@
 .completed2{
     color: #929292;
     font-weight:600;
+}
+
+.exit{
+    margin-top: 32px;
+    font-size: 18px;
+    cursor: pointer;
 }
 

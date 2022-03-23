@@ -59,25 +59,35 @@ const studentsTaskSlice = createSlice({
     name: "studentsTask",
     initialState: {
         tasksStudent: [],
+        navigator: [],
         execution: null,
         sample_text: "",
+        desc: "",
+        status: 0,
+        id: 0,
+        pass_count: 0,
+        nav: [],
         resultTask: {
             status: 0
         }
     },
     reducers: {
         addStudentTask(state, action){
-            state.tasksStudent = action.payload.data
+            state.tasksStudent = action.payload.data;
         },
         addExecution(state, action){
             state.execution = action.payload.task;
-            state.sample_text = action.payload.task.task.sample_text
+            state.sample_text = action.payload.task.task.sample_text;
+            state.status = action.payload.task.status;
+            state.id = action.payload.task.id;
+            state.pass_count = action.payload.task.pass_count;
         },
         codeHandler(state, action){
             state.sample_text = action.payload.code
         },
         resultTaskBtn(state, action){
             state.resultTask.status = action.payload.data.status;
+
         },
         reset(state, action){
             state.sample_text = action.payload.code
@@ -85,10 +95,19 @@ const studentsTaskSlice = createSlice({
         success(state, action){
             const res = state.tasksStudent.find(id => id.id === action.payload.id);
             res.status = 1
+        },
+        taskResult(state, action){
+            state.desc = action.payload.task.task.description
+        },
+        countTask(state, action){
+           state.pass_count = state.pass_count + 1
+        },
+        code2Handler(state, action){
+            state.sample_text = action.payload.task.solution
         }
     }
 })
 
-export const {addStudentTask, addExecution, codeHandler, resultTaskBtn, reset, success} = studentsTaskSlice.actions
+export const {addStudentTask, addExecution, codeHandler, resultTaskBtn, reset, success, taskResult, countTask, code2Handler} = studentsTaskSlice.actions
 
 export default studentsTaskSlice.reducer

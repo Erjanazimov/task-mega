@@ -65,7 +65,7 @@ const groupSlice = createSlice({
     },
     reducers: {
         addGroups(state, action){
-            state.groups = action.payload.data;
+            state.groups = action.payload.data.results;
         },
         editGroupAdd(state, action){
             state.nameGroup.title = action.payload.data.title;

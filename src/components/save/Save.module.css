@@ -1,8 +1,9 @@
 .fons{
-    width: 440px;
-    height: 100px;
+    width: 400px;
+    height: 100%;
     background-color: white;
     margin-top: 20px;
+    padding: 16px;
 }
 
 .checkboxBtn{
@@ -13,9 +14,10 @@
 .checkboxBtn{
     border-bottom: 1px solid #CECECE;
     border-top: 1px solid #CECECE;
-    width: 200px;
+    width: 160px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 5px;
 }
 
 .checkboxBtn > input{
@@ -30,14 +32,14 @@
 }
 
 .btn{
-    width: 160px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     background-color: #47CB7B;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
     margin-top: 20px;
